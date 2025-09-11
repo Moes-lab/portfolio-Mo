@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Gothic, sans-serif;
+    line-height: 1.6;
+    background: white;
+    color: black;
+    padding: 0;
+}
+
+
+header {
+    background: black;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-family: "Courier New", monospace;
+
+    border-bottom: 2px solid limegreen;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+header .logo {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+
+nav a:hover {
+    color: green;
+    text-shadow: 0 0 5px black;
+}
+
+main {
+    padding: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+
+button {
+    background:white;
+    color: black;
+    font-size: large;
+    border: 2px solid green;
+    padding: 10px 15px;
+    font-family: "Courier New", monospace;
+    cursor: pointer;
+    box-shadow: 0 0 5px green;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: lime;
+    color: black;
+}
+
+
+footer {
+    background: black;
+    color: green;
+    text-align: center;
+    padding: 20px;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-top: 2px solid #00ff00;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header .logo {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
