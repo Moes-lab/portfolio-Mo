@@ -138,6 +138,7 @@ footer {
 }
 .intro-text {
     flex: 2;
+    font-size: x-large;
 }
 .intro-image {
     flex: 1;
